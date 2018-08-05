@@ -47,7 +47,7 @@ module.exports = {
 }
 ```
 
-Set semver level via *env* parameter...
+To pass a semver level to your webpack config, set variable via *env* parameter like this...
 
 ``` javascript
 const BumpVerPlugin = require('bumpver-webpack-plugin');
@@ -64,7 +64,7 @@ module.exports = (env) => {
 }
 ```
 
-Then, add a variable to *env* containing the semver level to increment...
+Then, in your call to webpack add a variable to *env* containing the semver level to increment...
 
 ``` javascript
 "scripts": {
