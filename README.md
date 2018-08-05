@@ -15,8 +15,8 @@ yarn add bumpver-webpack-plugin --dev
 
 Increments patch number by default, but you can specify either major, minor, or patch. 
 
-files (required): one or more file names containing "version" to increment
-level (optional): semver level - 'major', 'minor', or 'patch'
+* files (required): one or more file names containing "version" to increment
+* level (optional): semver level - 'major', 'minor', or 'patch'
 
 To use default settings and increment patch for every build...
 
