@@ -15,6 +15,7 @@ yarn add bumpver-webpack-plugin --dev
 
 Increments patch number by default, but you can specify either major, minor, or patch. 
 
+Arguments:
 * files (required): one or more file names containing "version" to increment
 * level (optional): semver level - 'major', 'minor', or 'patch'
 
@@ -32,7 +33,7 @@ module.exports = {
 }
 ```
 
-To specify semver level (major, minor, or patch) for every build...
+To specify semver level ("major", "minor", or "patch") for every build...
 ``` javascript
 const BumpVerPlugin = require('bumpver-webpack-plugin');
 
@@ -46,7 +47,7 @@ module.exports = {
 }
 ```
 
-Conditionally set semver level...
+Set semver level via *env* parameter...
 
 ``` javascript
 const BumpVerPlugin = require('bumpver-webpack-plugin');
@@ -63,7 +64,7 @@ module.exports = (env) => {
 }
 ```
 
-Then, specify semver level via environment variable...
+Then, add a variable to *env* containing the semver level to increment...
 
 ``` javascript
 "scripts": {
@@ -73,4 +74,6 @@ Then, specify semver level via environment variable...
 }
 ```
 
-Plugin based on original *bump-webpack-plugin* by johnagan. 
+As per the [semver spec](https://semver.org/), when you increment minor the patch value will be reset to 0. When you increment major both the minor and patch will be reset to 0. 
+
+Plugin based on original *bump-webpack-plugin* by johnagan. Expanded functionality to include semver level. 
