@@ -45,8 +45,11 @@ BumpVerPlugin.prototype.increment = function(file, level) {
     switch (level) {
         case 'major':
             versions[0] = parseInt(versions[0]) + 1;
+            versions[1] = 0; //reset minor to 0
+            versions[2] = 0; //reset patch to 0
         case 'minor': 
             versions[1] = parseInt(versions[1]) + 1;
+            versions[2] = 0; //reset patch to 0
         case 'patch':
             versions[2] = parseInt(versions[2]) + 1;
     }  
