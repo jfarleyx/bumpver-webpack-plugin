@@ -1,7 +1,7 @@
 # bumpver-webpack-plugin
 A webpack plugin to bump the major, minor, or patch number for a build. 
 
-##Install
+## Install
 
 ```
 npm install bumpver-webpack-plugin --save-dev
@@ -11,7 +11,7 @@ or
 yarn add bumpver-webpack-plugin --dev
 ```
 
-##Usage
+## Usage
 
 Increments patch number by default, but you can specify either major, minor, or patch. 
 
