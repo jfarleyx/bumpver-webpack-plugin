@@ -1,6 +1,6 @@
 {
   "name": "bumpver-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A webpack plugin to bump the major, minor, or patch number for a build",
   "main": "index.js",
   "scripts": {
